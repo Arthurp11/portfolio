@@ -1,0 +1,22 @@
+<section class="contact" id="contact">
+  <div class="glow"></div>
+  <div class="container" appReveal>
+    <p class="tag">// vamos conversar</p>
+    <h2>
+      <span class="prompt">&gt;</span> disponível para novas oportunidades<span class="cursor">_</span>
+    </h2>
+
+    <div class="links">
+      @for (link of links; track link.label) {
+        <a [href]="link.href" target="_blank" rel="noopener">
+          <span class="label">{{ link.label }}</span>
+          <span class="value">{{ link.value }}</span>
+        </a>
+      }
+    </div>
+  </div>
+
+  <footer>
+    <p>Arthur Smiths Primo · Pelotas, RS · {{ year }}</p>
+  </footer>
+</section>

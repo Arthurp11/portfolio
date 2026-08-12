@@ -1,0 +1,22 @@
+<section class="about" id="about">
+  <div class="container" appReveal>
+    <p class="tag">// sobre_mim</p>
+    <p class="text">
+      Desenvolvedor <span class="hl">Full Stack</span> focado em Node.js, TypeScript e NestJS,
+      construindo APIs escaláveis e integrações de pagamento que rodam em produção todos os dias.
+      Integrou individualmente o gateway <span class="hl">Stripe</span> do zero em uma plataforma e colaborou
+      na integração em outra, além de otimizações de performance que eliminaram gargalos críticos em banco de dados.
+      Também aplica <span class="hl">Java e Spring Boot</span> em projetos pessoais, ampliando a atuação além do
+      ecossistema JavaScript.
+    </p>
+
+    <div class="stats">
+      @for (stat of stats; track stat.label) {
+        <div class="stat">
+          <span class="value">{{ stat.value }}</span>
+          <span class="label">{{ stat.label }}</span>
+        </div>
+      }
+    </div>
+  </div>
+</section>

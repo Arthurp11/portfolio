@@ -1,0 +1,63 @@
+.skills {
+  background: #05070a;
+  padding: 4rem 1.25rem 5rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tag {
+  color: #00e5ff;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.group {
+  background: #0b0f16;
+  border: 1px solid #182231;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+
+  &:hover,
+  &:active {
+    border-color: #2979ff;
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    font-size: 0.85rem;
+    color: #7ee787;
+    margin-bottom: 0.9rem;
+    font-weight: 600;
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  font-size: 0.78rem;
+  color: #a0b4d0;
+  border: 1px solid #22304a;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  transition: color 0.25s ease, border-color 0.25s ease;
+
+  &:hover {
+    color: #00e5ff;
+    border-color: #00e5ff;
+  }
+}

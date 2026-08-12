@@ -1,0 +1,23 @@
+<section class="projects" id="projects">
+  <div class="container">
+    <p class="tag" appReveal>// projetos</p>
+
+    <div class="grid">
+      @for (project of projects; track project.name) {
+        <a class="card" [href]="project.link" target="_blank" rel="noopener" appReveal>
+          @if (project.badge) {
+            <span class="badge">{{ project.badge }}</span>
+          }
+          <h3>{{ project.name }}</h3>
+          <p class="description">{{ project.description }}</p>
+          <div class="stack">
+            @for (tech of project.stack; track tech) {
+              <span>{{ tech }}</span>
+            }
+          </div>
+          <span class="link">ver no github →</span>
+        </a>
+      }
+    </div>
+  </div>
+</section>

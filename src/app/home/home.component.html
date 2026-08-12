@@ -1,1 +1,43 @@
+<div class="progress" [style.width.%]="scrollProgress()"></div>
+
+<nav class="nav">
+  <span class="brand">AP<span class="dot">_</span></span>
+
+  <div class="links">
+    @for (link of links; track link.href) {
+      <a [href]="link.href">{{ link.label }}</a>
+    }
+  </div>
+
+  <button
+    class="burger"
+    type="button"
+    [class.open]="menuOpen()"
+    [attr.aria-expanded]="menuOpen()"
+    aria-label="Abrir menu"
+    (click)="toggleMenu()"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="menu-overlay" [class.open]="menuOpen()" (click)="closeMenu()">
+  <div class="menu-links" (click)="$event.stopPropagation()">
+    @for (link of links; track link.href) {
+      <a [href]="link.href" (click)="closeMenu()">{{ link.label }}</a>
+    }
+  </div>
+</div>
+
 <app-hero />
+<app-about />
+<app-skills />
+<app-experience />
+<app-projects />
+<app-contact />
+
+<button class="back-to-top" [class.visible]="showBackToTop()" (click)="scrollToTop()" aria-label="Voltar ao topo">
+  ↑
+</button>

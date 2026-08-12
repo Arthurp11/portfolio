@@ -1,0 +1,100 @@
+.experience {
+  background: #05070a;
+  padding: 4rem 1.25rem 5rem;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.tag {
+  color: #00e5ff;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 1.4rem;
+  border-left: 1px solid #182231;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  left: -1.65rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00e5ff;
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.15);
+}
+
+.card {
+  background: #0b0f16;
+  border: 1px solid #182231;
+  border-radius: 12px;
+  padding: 1.15rem 1.25rem;
+  transition: border-color 0.3s ease;
+
+  &:hover,
+  &:active {
+    border-color: #2979ff;
+  }
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: baseline;
+
+  h3 {
+    font-size: 1.05rem;
+    color: #e6edf3;
+  }
+
+  .period {
+    font-size: 0.78rem;
+    color: #6b7f99;
+    white-space: nowrap;
+  }
+}
+
+.company {
+  color: #7ee787;
+  font-size: 0.85rem;
+  margin: 0.35rem 0 0.9rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+
+  li {
+    color: #a0b4d0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding-left: 1.1rem;
+    position: relative;
+
+    &::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: #2979ff;
+    }
+  }
+}
