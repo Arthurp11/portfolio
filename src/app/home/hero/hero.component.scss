@@ -35,18 +35,18 @@
   font-weight: 700;
   font-size: clamp(2.5rem, 8vw, 5.5rem);
   line-height: 1.1;
-  background: linear-gradient(90deg, #2979ff, #00e5ff, #2979ff);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shine 4s linear infinite;
 }
 
 .name .line {
   display: block;
   opacity: 0;
-  animation: fadeSlideUp 0.9s ease-out forwards;
+  background: linear-gradient(90deg, #2979ff, #00e5ff, #2979ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: fadeSlideUp 0.9s ease-out forwards, shine 4s linear infinite;
 }
 
 .name .line:first-child {
